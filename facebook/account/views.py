@@ -1,6 +1,6 @@
 from django.shortcuts import render,HttpResponse
 
-def taks1(request):
+def task1(request):
     context=[
         {
             'name':'nandhakumar',
@@ -12,3 +12,8 @@ def taks1(request):
     return render(request,'home.html',{'context':context})
 
 # Create your views here.
+
+def task2(request,father,son):
+    
+    context={'father':father,'son':son}
+    return render(request,'home2.html',context)
