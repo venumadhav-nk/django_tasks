@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1" style="color: springgreen;">
+        <thead>
+           
+            <th>fruit Name</th>
+            <th>quantity</th>
+            <th>Rate</th>
+            
+        </thead>
+        <tbody>
+            {% for f in fruit %}
+            <tr>
+                
+                <td>{{f.fruit}}</td>
+                <td>{{f.quantity}}</td>
+                <td>{{f.rate}}</td>
+            </tr>
+            {% endfor %}
+            
+
+        </tbody>
+
+
+
+
+
+    </table>
+    
+</body>
+</html>
