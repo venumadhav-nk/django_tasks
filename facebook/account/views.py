@@ -37,3 +37,6 @@ def fruit(request):
         }
     ]
     return render(request ,'home3.html',{'fruit':fruit})
+
+def nav(request):
+    return render(request,'nav.html')
