@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse
+from .models import student
 
 def task1(request):
     context=[
@@ -40,3 +41,7 @@ def fruit(request):
 
 def nav(request):
     return render(request,'nav.html')
+
+def stu(request):
+    students=student.objects.all()
+    return render(request,'base.html',{'student':students})

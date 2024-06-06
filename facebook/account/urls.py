@@ -6,6 +6,7 @@ urlpatterns = [
     path('task2/<str:father>/<str:son>/',views.task2),
     path('fruit/',views.fruit),
     path('nav/',views.nav),
+    path('stu/',views.stu),
 
 
 ]

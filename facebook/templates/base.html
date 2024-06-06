@@ -10,6 +10,15 @@
 </head>
 <body>
     <h2>surya</h2>
+    {% for student in student %}
+    {{student.name}}
+    {{student.mobile}}
+    {{student.dob}} <br>
+    
+    
+    {% endfor %}
+
+
     {% block content %}
     
     
