@@ -45,3 +45,4 @@ def nav(request):
 def stu(request):
     students=student.objects.all()
     return render(request,'base.html',{'student':students})
+

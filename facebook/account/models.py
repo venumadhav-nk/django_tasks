@@ -8,3 +8,12 @@ class student(models.Model):
 
     def __str__(self):
         return self.name
+class employe(models.Model):
+    name=models.CharField(max_length=50)
+    salary=models.IntegerField(max_length=20)
+    gender=models.CharField( max_length=50)
+    role=models.CharField(max_length=20)
+    shift=models.CharField( max_length=50)
+
+    def __str__(self):
+        return self.name
